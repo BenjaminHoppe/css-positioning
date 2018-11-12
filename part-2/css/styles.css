@@ -17,6 +17,7 @@ body {
 
 img {
   max-width: 100%;
+  grid-column: 1;
 }
 
 figure {
@@ -26,4 +27,29 @@ figure {
 .film {
   width: 50%;
   margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid gray;
+  padding: 20px;
+}
+.film-details {
+  grid-column: 2;
+  padding: 0 20px 20px 20px;
+  position: relative;
+}
+.film-poster {
+  position: relative;
+}
+.action-watch-later {
+  position: absolute;
+  color: red;
+  right: 8px;
+  top: 8px;
+}
+.action-like {
+  color: red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
 }
